@@ -1,13 +1,14 @@
-var day = ['monday', 'tuesday', 'wednesday', 'thirsday', 'friday'];
-var hour = [9, 10, 11, 12, 13, 14, 15, 16, 17];
+let newdate=new Date()
+let hours=newdate.getHours()
+let day=newdate.getDay()
 
-var today = new Date();
-var date = today.getDate();
 
-for(i in day){
-    for (j in hour){
-        if((date !== day[i]) || (date.getHours() !== hour[j])) {
-            console.log('Come back later' + i)
-        }
+function date(req,res,next) {
+    if((hours<9|| hours>17)&&((day==6 || day==0))){
+        res.send('closed')
+    } else {
+        next()
     }
 }
+
+module.exports = date;
