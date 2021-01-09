@@ -1,0 +1,48 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(225, 241, 255);
+}
+h1, p{
+    text-align: center;
+    color: rgb(68, 112, 151);
+}
+a{
+    padding: 30px 30px 20px 30px;
+    text-decoration: none;
+    background-color: aliceblue;
+    color: rgb(68, 112, 151);
+    margin: 10px;
+    border-radius: 0 0 20px 20px;
+}
+a:hover{
+    color:aliceblue ;
+    background-color: rgb(68, 112, 151);
+}
+form{
+    text-align: center;
+    background-color: rgb(68, 112, 151);
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px;
+    border-radius: 20px;
+    color: rgb(225, 241, 255);
+}
+input{
+    padding: 3px;
+    border-radius: 5px;
+}
+button{
+    margin-top: 10px;
+    padding: 10px;
+    color: rgb(68, 112, 151);
+    background-color: aliceblue;
+    border-radius: 10px;
+    margin-right: -180px;
+}
+.image{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
